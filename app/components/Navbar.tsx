@@ -72,7 +72,7 @@ const CustomNavbar = () => {
                     />
                     <NavbarBrand>
 
-                        <p className="font-bold text-inherit">STEVENDEV</p>
+                        <p className="font-bold text-2xl text-inherit">STEVENDEV</p>
                     </NavbarBrand>
                 </NavbarContent>
 
@@ -82,7 +82,7 @@ const CustomNavbar = () => {
                             <NavbarMenuItem key={item.id}>
                                 <Link
                                     // color='primary'
-                                    className={`link ${pathname === item.href ? 'text-blue-700 font-bold' : ''}`}
+                                    className={`link ${pathname === item.href ? 'text-blue-700 font-bold ' : ''}`}
                                     href={item.href}
                                 // size="lg"
                                 >
