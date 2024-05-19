@@ -35,14 +35,24 @@ const CustomNavbar = () => {
     const [mounted, setMounted] = useState(false)
     const [isSelected, setIsSelected] = useState(false)
 
+    const themeLocalStorage = localStorage.getItem("theme")
+
     useEffect(() => {
         setMounted(true)
-    }, [])
+        if (themeLocalStorage!==null && themeLocalStorage == 'light') {
+            setIsSelected(true)
+            setTheme(themeLocalStorage)
+            return
+        }
+        setTheme('dark')
+
+    }, [setTheme, themeLocalStorage])
 
     if (!mounted) return null
 
     const toggleSwitch = () => {
         setIsSelected((prev) => !prev)
+        localStorage.setItem("theme", isSelected ? 'dark' : 'light')
         setTheme(isSelected ? 'dark' : 'light')
     }
 
@@ -53,7 +63,7 @@ const CustomNavbar = () => {
 
     return (
         <>
-
+            
             <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle
