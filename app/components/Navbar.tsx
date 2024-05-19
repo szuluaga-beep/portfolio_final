@@ -35,10 +35,10 @@ const CustomNavbar = () => {
     const [mounted, setMounted] = useState(false)
     const [isSelected, setIsSelected] = useState(false)
 
-    const themeLocalStorage = localStorage.getItem("theme")
-
+    
     useEffect(() => {
         setMounted(true)
+        const themeLocalStorage = localStorage.getItem("theme")
         if (themeLocalStorage!==null && themeLocalStorage == 'light') {
             setIsSelected(true)
             setTheme(themeLocalStorage)
@@ -46,7 +46,7 @@ const CustomNavbar = () => {
         }
         setTheme('dark')
 
-    }, [setTheme, themeLocalStorage])
+    }, [setTheme])
 
     if (!mounted) return null
 
