@@ -19,7 +19,7 @@ const menuItems = [
         href: '/about'
     },
     {
-        id: 2,
+        id: 3,
         name: "Portfolio",
         href: '/portfolio'
     },
@@ -46,10 +46,15 @@ const CustomNavbar = () => {
         setTheme(isSelected ? 'dark' : 'light')
     }
 
+    const closeMenu = () => {
+
+        setIsMenuOpen((prev) => !prev)
+    }
+
     return (
         <>
 
-            <Navbar onMenuOpenChange={setIsMenuOpen}>
+            <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle
                         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -103,7 +108,7 @@ const CustomNavbar = () => {
                     {menuItems.map((item) => (
                         <NavbarMenuItem key={item.id}>
                             <Link
-                                onClick={() => setIsMenuOpen(true)}
+                                onClick={closeMenu}
                                 className="w-full"
                                 href={item.href}
                             // size="lg"
