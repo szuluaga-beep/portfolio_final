@@ -14,7 +14,6 @@ const words = ["web apps", "websites", "mobile apps", "landing pages"]
 const Presentation = () => {
 
     const [currentWord, setCurrentWord] = useState(words[0]);
-
     useEffect(() => {
         const intervalId = setInterval(() => {
             const randomIndex = Math.floor(Math.random() * words.length);
@@ -25,7 +24,7 @@ const Presentation = () => {
     }, []);
     return (
 
-        <div className='mt-2 px-10 py-5 flex shadow-2xl'>
+        <div className='mt-2 px-10 py-5 flex shadow-2xl sm:grid-cols-1 md:grid-cols-2'>
             <div className='flex flex-col justify-start items-start rounded-lg px-8 py-10 gap-4 sm:w-full md:w-3/4  mt-2'>
                 <Image
                     className="w-52 h-52 rounded-3xl -rotate-12 ml-3 object-cover hover:animate-spin"
