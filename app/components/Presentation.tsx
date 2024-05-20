@@ -6,6 +6,7 @@ import profilePic from '../../public/images/picture.png'
 import Image from 'next/image';
 import { Chip } from '@nextui-org/react';
 import MobilePicture from './mobile/Mobile';
+import Title from './shared/Title';
 
 const words = ["web apps", "websites", "mobile apps", "landing pages"]
 
@@ -25,7 +26,7 @@ const Presentation = () => {
 
     return (
 
-        <div className='mt-2 px-10 flex justify-center items-center py-5 w-full shadow-2xl grid-cols-2'>
+        <div className='mt-2 px-10 py-5 flex justify-center items-center shadow-2xl'>
             <div className='flex flex-col justify-start items-center sm:items-start rounded-lg px-8 py-10 gap-4 mt-2 w-full xl:w-3/4'>
                 <Image
                     className="w-52 h-52 rounded-3xl -rotate-12 ml-3 object-cover mb-3 hover:animate-spin"
@@ -38,7 +39,7 @@ const Presentation = () => {
                 />
 
                 <div className='flex flex-col'>
-                    <h1 className='text-4xl font-bold mb-3'>Hi, I am Steven - Developer and Engineer</h1>
+                    <Title title='Hi, I am Steven - Developer and Engineer' />
 
                     <span className='sm:text-2xl md:text-4xl leading-snug'>
                         I enjoy creating products from
