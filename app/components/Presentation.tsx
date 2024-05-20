@@ -60,9 +60,9 @@ const Presentation = () => {
                         that make a profit or enhance business.
                     </span>
                 </div>
-                <div className='flex gap-2 justify-center items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-2 justify-center items-center'>
 
-                    <a href="https://api.whatsapp.com/send/?phone=573137896663" className="px-3 hover:scale-110 h-10 font-semibold rounded-full bg-violet-600 text-white flex items-center" target='_blank'>
+                    <a href="https://api.whatsapp.com/send/?phone=573137896663" className="px-3 hover:scale-110 h-10 font-semibold rounded-full bg-violet-600 text-white flex items-center justify-center text-center" target='_blank'>
                         Let&apos;s talk
                     </a>
 
