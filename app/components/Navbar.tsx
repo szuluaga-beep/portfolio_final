@@ -1,5 +1,5 @@
 'use client'
-import React, { FC, ReactNode, useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { useTheme } from "next-themes";
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, Switch } from '@nextui-org/react';
@@ -13,16 +13,16 @@ const menuItems = [
         name: "Home page",
         href: '/'
     },
-    {
-        id: 2,
-        name: "About me",
-        href: '/about'
-    },
-    {
-        id: 3,
-        name: "Portfolio",
-        href: '/portfolio'
-    },
+    // {
+    //     id: 2,
+    //     name: "About me",
+    //     href: '/about'
+    // },
+    // {
+    //     id: 3,
+    //     name: "Portfolio",
+    //     href: '/portfolio'
+    // },
 
 ];
 

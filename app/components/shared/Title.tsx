@@ -7,9 +7,9 @@ interface Props {
 const Title: FC<Props> = ({ title }) => {
     return (
         <>
-            <h1 className='text-4xl font-bold mb-3'>
+            <h2 className='text-4xl font-bold mb-3'>
                 {title}
-            </h1>
+            </h2>
         </>
     )
 }
