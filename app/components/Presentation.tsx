@@ -1,11 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
-import { TvIcon } from '@heroicons/react/16/solid';
+
 import profilePic from '../../public/images/picture.png'
 import Image from 'next/image';
 import { Chip } from '@nextui-org/react';
-import WebPicture from './web/Web';
 import MobilePicture from './mobile/Mobile';
 
 const words = ["web apps", "websites", "mobile apps", "landing pages"]
@@ -22,6 +21,8 @@ const Presentation = () => {
 
         return () => clearInterval(intervalId); // Clear the interval when the component unmounts
     }, []);
+
+
     return (
 
         <div className='mt-2 px-10 flex justify-center items-center py-5 w-full shadow-2xl grid-cols-2'>
@@ -67,10 +68,13 @@ const Presentation = () => {
                     <Chip className=' p-4' color="success" variant="dot">Open for opportunities</Chip>
                 </div>
             </div>
+
+
             <div className='hidden xl:block w-1/4'>
 
-                <MobilePicture style="mt-5" />
+                <MobilePicture style="mt-5 w-full" />
             </div>
+
 
 
 
