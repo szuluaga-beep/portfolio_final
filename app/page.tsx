@@ -9,8 +9,10 @@ const Page = () => {
   return (
     <>
       <Presentation />
-      <Divider className=''/>
+      <Divider />
       <Portfolio />
+      <Divider />
+     
     </>
   )
 }

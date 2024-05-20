@@ -1,40 +1,38 @@
 import React from 'react'
 import Title from './shared/Title'
-// import Image from 'next/image'
 import Project from './Project'
-import { Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
 
 const projects = [
     {
         id: 1,
-        title: "Chimba tours",
-        urlProject: "https://github.com/szuluaga-beep/chimba-tours",
-        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716233315/portfolio/atpxgdcvqkkhmwhrgatk.png"
+        title: "Código C13",
+        url:'https://www.codigoc13.com/',
+        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716236229/portfolio/ou5cccvjevujxezi4ar5.png"
     },
     {
         id: 2,
         title: "Chimba tours",
-        urlProject: "https://github.com/szuluaga-beep/chimba-tours",
+        url: "https://github.com/szuluaga-beep/chimba-tours",
         photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716233315/portfolio/atpxgdcvqkkhmwhrgatk.png"
     },
     {
         id: 3,
-        title: "Chimba tours",
-        urlProject: "https://github.com/szuluaga-beep/chimba-tours",
-        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716233315/portfolio/atpxgdcvqkkhmwhrgatk.png"
+        title: "Dashboard with Next-JS",
+        url: "https://github.com/szuluaga-beep/nextjs-dashboard",
+        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716238586/portfolio/j70l0dlbxhhkilrrhzgd.png"
     },
     {
         id: 4,
-        title: "Chimba tours",
-        urlProject: "https://github.com/szuluaga-beep/chimba-tours",
-        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716233315/portfolio/atpxgdcvqkkhmwhrgatk.png"
+        title: "Cinemapedia with flutter",
+        url: "https://github.com/szuluaga-beep/cinemapedia",
+        photoUrl: "https://res.cloudinary.com/dpfrys3uj/image/upload/v1716238855/portfolio/n29jpedmeihaje1a0at8.png"
     },
 ]
 
 
 const Portfolio = () => {
     return (
-        <div className='mt-2 px-10 py-5'>
+        <div className='my-2 px-10 py-5'>
             <Title title='Portfolio projects' />
             <div>
 
@@ -46,8 +44,6 @@ const Portfolio = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5 px-10'>
                 {
                     projects.map((project, index) => (
-
-
                         <Project key={index} projectData={project} />
                         // <Project key={index} projectData={project}/>
                     )
