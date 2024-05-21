@@ -1,9 +1,12 @@
-import { LinkIcon } from '@nextui-org/react'
+
 import React from 'react'
+import { LinkIcon } from '@nextui-org/react'
+import { useTheme } from 'next-themes'
 
 const Footer = () => {
+    
     return (
-        <footer className='bg-violet-600 mt-4 px-10 py-5 rounded-t-3xl flex justify-center'>
+        <footer className='text-white bg-violet-600 mt-4 px-10 py-5 rounded-t-3xl flex justify-center'>
             <div className='grid gap-2 place-items-center'>
                 <h2 className='text-xl md:text-4xl font-bold'>
                     Let&apos;s talk about your project:
