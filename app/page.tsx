@@ -4,6 +4,7 @@ import Presentation from './components/Presentation'
 import Portfolio from './components/Portfolio'
 import { Divider } from '@nextui-org/react'
 import Business from './components/Business'
+import Footer from './components/shared/Footer'
 
 
 const Page = () => {
@@ -13,8 +14,9 @@ const Page = () => {
       <Divider />
       <Portfolio />
       <Divider />
-      <Business/>
-     
+      <Business />
+      <Divider />
+      <Footer />
     </>
   )
 }
