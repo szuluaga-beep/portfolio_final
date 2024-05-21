@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers/providers";
-import CustomNavbar from "./components/Navbar";
+import CustomNavbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Providers>
           <CustomNavbar />
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>

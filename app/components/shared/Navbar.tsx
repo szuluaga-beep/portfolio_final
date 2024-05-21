@@ -13,16 +13,11 @@ const menuItems = [
         name: "Home page",
         href: '/'
     },
-    // {
-    //     id: 2,
-    //     name: "About me",
-    //     href: '/about'
-    // },
-    // {
-    //     id: 3,
-    //     name: "Portfolio",
-    //     href: '/portfolio'
-    // },
+    {
+        id: 2,
+        name: "About me",
+        href: '/about'
+    },
 
 ];
 
@@ -35,11 +30,11 @@ const CustomNavbar = () => {
     const [mounted, setMounted] = useState(false)
     const [isSelected, setIsSelected] = useState(false)
 
-    
+
     useEffect(() => {
         setMounted(true)
         const themeLocalStorage = localStorage.getItem("theme")
-        if (themeLocalStorage!==null && themeLocalStorage == 'light') {
+        if (themeLocalStorage !== null && themeLocalStorage == 'light') {
             setIsSelected(true)
             setTheme(themeLocalStorage)
             return
@@ -63,7 +58,7 @@ const CustomNavbar = () => {
 
     return (
         <>
-            
+
             <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle

@@ -32,7 +32,7 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <div className='my-2 px-3 md:px-10 py-5'>
+        <div className='mx-2 md:mx-10 px-3 md:px-10 py-5'>
             <Title title='Portfolio projects' />
             <div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomNavbar from './components/Navbar'
+import CustomNavbar from './components/shared/Navbar'
 import Presentation from './components/Presentation'
 import Portfolio from './components/Portfolio'
 import { Divider } from '@nextui-org/react'
@@ -16,7 +16,7 @@ const Page = () => {
       <Divider />
       <Business />
       <Divider />
-      <Footer />
+
     </>
   )
 }
