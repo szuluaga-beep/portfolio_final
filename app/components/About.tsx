@@ -18,7 +18,7 @@ const About = () => {
                 <div>
 
                     <Snippet
-                        className="text-sm"
+                        className="text-xs"
                         variant="shadow" color="primary">
                         Web and mobile developer and Engineer
                     </Snippet>
