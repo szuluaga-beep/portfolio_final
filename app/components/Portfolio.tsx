@@ -33,7 +33,7 @@ const projects = [
 const Portfolio = () => {
     return (
         <div className='mx-2 md:mx-10 px-3 md:px-10 py-5'>
-            <Title title='Portfolio projects' />
+            <Title text='Portfolio projects' />
             <div>
 
                 <p className='text-2xl md:text-4xl leading-snug'>

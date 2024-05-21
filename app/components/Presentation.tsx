@@ -39,7 +39,7 @@ const Presentation = () => {
                 />
 
                 <div className='flex flex-col'>
-                    <Title title='Hi, I am Steven - Developer and Engineer' />
+                    <Title text='Hi, I am Steven - Developer and Engineer' />
 
                     <span className='sm:text-xl md:text-3xl leading-snug'>
                         I enjoy creating products from

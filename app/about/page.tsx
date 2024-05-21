@@ -5,6 +5,7 @@ import About from '../components/About'
 import Expertise from '../components/Expertise'
 import Business from '../components/Business'
 import Skills from '../components/Skills'
+import Education from '../components/Education'
 
 const AboutPage = () => {
   return (
@@ -15,6 +16,7 @@ const AboutPage = () => {
       
       <Business/>
       <Skills/>
+      <Education/>
 
       {/* <Portfolio /> */}
     </>

@@ -1,17 +1,6 @@
 import React from 'react'
 import Subtitle from './shared/Subtitle'
 
-/*
-
-8+
-
-Projects completed
-
-100+
-
-
-
-10+*/
 const Expertise = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 gap-3 px-2 md:px-20 my-5'>

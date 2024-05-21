@@ -1,14 +1,14 @@
 import React, { FC } from 'react'
 
 interface Props {
-    title: string
+    text: string
 
 }
-const Title: FC<Props> = ({ title }) => {
+const Title: FC<Props> = ({ text }) => {
     return (
         <>
             <h2 className='text-4xl font-bold mb-3'>
-                {title}
+                {text}
             </h2>
         </>
     )

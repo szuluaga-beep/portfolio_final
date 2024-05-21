@@ -4,7 +4,7 @@ import Title from './shared/Title'
 const Business = () => {
     return (
         <div className='mx-2 md:mx-10 my-5 px-10 py-5'>
-            <Title title='What I can do for you' />
+            <Title text='What I can do for you' />
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                 <div className='shadow-xl py-4 px-5 rounded-lg  flex flex-col justify-center'>
                     <h2 className='text-3xl'>

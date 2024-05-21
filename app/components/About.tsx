@@ -23,13 +23,13 @@ const About = () => {
                         Web and mobile developer and Engineer
                     </Snippet>
                 </div>
-                <div>
-                    <Title title='Hi, I&apos;m Steven Zuluaga Cortés' />
+                <div className='mx-10'>
+                    <Title text='Hi, I&apos;m Steven Zuluaga Cortés' />
 
                     <Subtitle
                         text='Your strategic partner for digital solutions' />
                 </div>
-                <h3 className='text-lg'>
+                <h3 className='text-lg mx-10'>
                     With 4+ years of experience in web and mobile development for B2B, B2C, platforms, I engineer user-centric digital interfaces that align with the strategic objectives of the business. My background leverages analytical and data-driven management skills to ensure optimal user experience and product success.
                 </h3>
             </div>
