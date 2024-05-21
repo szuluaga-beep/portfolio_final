@@ -41,7 +41,7 @@ const Presentation = () => {
                 <div className='flex flex-col'>
                     <Title title='Hi, I am Steven - Developer and Engineer' />
 
-                    <span className='sm:text-2xl md:text-4xl leading-snug'>
+                    <span className='sm:text-xl md:text-3xl leading-snug'>
                         I enjoy creating products from
                         scratch and improve existing ones.<br />
                         In simple terms, I develop
@@ -52,11 +52,11 @@ const Presentation = () => {
                             duration: 2,
                             x: { duration: 1 }
                         }}>
-                        <span className='sm:text-2xl md:text-4xl'>{
+                        <span className='sm:text-xl md:text-3xl'>{
                             currentWord
                         }</span>
                     </motion.div>
-                    <span className='sm:text-2xl md:text-4xl leading-snug'>
+                    <span className='sm:text-xl md:text-3xl leading-snug'>
                         that make a profit or enhance business.
                     </span>
                 </div>
